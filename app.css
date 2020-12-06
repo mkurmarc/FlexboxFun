@@ -1,0 +1,24 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto; /*centers it*/
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* adjust content within container */
+/*    flex-direction: row-reverse; /* default is left to right, but with row-reverse it changes it to right to left*/
+/*    flex-direction: column; /*now elements go top to bottom*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
+
