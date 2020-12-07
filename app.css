@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-h1 {
+h1, h2 {
     text-align: center;
 }
 #container {
@@ -11,14 +11,41 @@ h1 {
     margin: 0 auto; /*centers it*/
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; /* adjust content within container */
+    flex-direction: row;
+    justify-content: center; /* adjust content within container */
 /*    flex-direction: row-reverse; /* default is left to right, but with row-reverse it changes it to right to left*/
 /*    flex-direction: column; /*now elements go top to bottom*/
+/*    flex-wrap: wrap; /* for main axis */
+    align-items: flex-start; /* for cross axis */
+    flex-wrap: wrap;
+    align-content: center; /* controls space between columns */
+
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    text-align: center;
+
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex; 
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+}
